@@ -53,6 +53,7 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/client/home', [ClientController::class, 'home'])->name('client.home');
         Route::get('/client/contact', [ClientController::class, 'contact'])->name('client.contact');
         Route::get('/client/download/{id}', [ClientController::class, 'downloadFile'])->name('client.home');
+        Route::post('/client/search', [ClientController::class, 'search'])->name('client.search');
     });
 
     //Logout

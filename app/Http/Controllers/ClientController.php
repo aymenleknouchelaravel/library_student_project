@@ -28,5 +28,13 @@ class ClientController extends Controller
         abort(404, 'File not found');
     }
 
+    public function search(Request $request)
+    {
+
+        $books = Book::where('name', 'LIKE', '%' . $request->name . '%')->get();
+
+        return view('client.search', compact("books"));
+    }
+
 
 }

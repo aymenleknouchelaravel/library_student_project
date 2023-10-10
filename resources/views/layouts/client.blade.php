@@ -29,15 +29,20 @@
     <header class="">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="">
+                <a class="navbar-brand row" href="/">
                     <img style="height: 70px" src="../logo.jpg" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <h5 class="text-info">Library university Mila</h5>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
+
                     <ul class="navbar-nav ml-auto">
+                        <form action="/client/search" method="POST" class="d-flex" role="search">
+                            @csrf
+                            <button class="btn btn-outline-info mr-2" type="submit">Search</button>
+                            <input name="name" class="form-control mr-5" type="search" placeholder="Book name ...."
+                                aria-label="Search">
+                        </form>
+
                         <li class="nav-item active">
                             <a class="nav-link text-info" href="/client/home">Home
                                 <span class="sr-only">(current)</span>
@@ -68,7 +73,7 @@
     </div>
     <!-- Banner Ends Here -->
 
-   
+
 
 
 

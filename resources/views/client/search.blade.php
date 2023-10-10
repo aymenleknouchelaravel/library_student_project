@@ -3,7 +3,6 @@
 @section('title', 'Home')
 
 @section('content')
-    <img style="height: 700px; width:100%;padding-top:70px;" class="img-fluid " src="../img.jpg" alt="">
     <section class="blog-posts grid-system">
         <div class="container">
             <div class="all-blog-posts">
